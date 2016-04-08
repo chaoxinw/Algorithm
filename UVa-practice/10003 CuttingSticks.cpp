@@ -7,9 +7,8 @@ int minf(int a, int b){
     return a <= b ? a : b;
 }
 
-void cutting_func(){
-    int stick_l;      // < 1000
-    cin >> stick_l;
+void cutting_func(int stick_l){
+    //int stick_l;      // < 1000
     int num_cut;      // < 50
     cin >> num_cut;
     
@@ -61,7 +60,10 @@ void cutting_func(){
 //}
 
 int main(void) {
-    cutting_func();
-    
+    int n;
+    while(cin >> n){
+        if (n == 0){break;}
+        cutting_func(n);
+    }
     return 0;
 }
